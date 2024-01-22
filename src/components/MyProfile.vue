@@ -13,9 +13,9 @@
     </div>
 </template>
 
-<style>
+<style scoped>
     .content {
-        padding: 8rem 0;
+        padding: 8rem 0 4rem 0;
     }
     h1 {
         font-size: 3rem;
