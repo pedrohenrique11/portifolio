@@ -11,10 +11,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
       <ul>
         <li>
-          <a href=""></a>
+          <a href="https://github.com/pedrohenrique11"><img src="../src/components/icons/icons8-github.svg" alt=""></a>
         </li>
         <li>
-          <a href=""></a>
+          <a href="https://www.linkedin.com/in/pedro-henrique-79483b19a/"><img src="../src/components/icons/icons8-linkedin.svg" alt=""></a>
         </li>
       </ul>
   </header>
@@ -38,6 +38,15 @@ import { RouterLink, RouterView } from 'vue-router'
   }
   ul{
     display:flex;
+    align-items: center;
     list-style: none;
+
+    padding: 0;
+  }
+  li {
+    margin: 0;
+  }
+  img {
+    width: 35px;
   }
 </style>

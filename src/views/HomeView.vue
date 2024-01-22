@@ -17,12 +17,12 @@ import TextSection from '../components/TextSection.vue'
     
     <TextSection 
     title='Courses' 
-    text="EBAC - Front-end developer | 11/2022 - at the moment"
+    text="EBAC - Front-end developer"
     secondText="
-The EBAC Front-End course was a deep dive into web development, covering HTML, CSS, and JavaScript fundamentals. We explored popular frameworks like Vue.js and React.js, learned about agile practices, front-end architecture, and API integration. The course also touched on version control with Git and introduced optimization techniques. Tools like Webpack and Gulp were used for workflow automation. Emphasis on collaborative projects highlighted the significance of teamwork in front-end development."
+  The EBAC Front-End course was a deep dive into web development, covering HTML, CSS, and JavaScript fundamentals. We explored popular frameworks like Vue.js and React.js, learned about agile practices, front-end architecture, and API integration. The course also touched on version control with Git and introduced optimization techniques. Tools like Webpack and Gulp were used for workflow automation. Emphasis on collaborative projects highlighted the significance of teamwork in front-end development."
     />
     <div class="section-button">
-        <TheButtons class="button" title='Check My Projects'/>
+        <TheButtons class="button" title='My Projects'/>
     </div>
   </main>
 </template>

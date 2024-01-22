@@ -1,7 +1,12 @@
+<script setup>
+import TextSection from '../components/TextSection.vue'
+import MyProjects from '../components/MyProjects.vue'
+</script>
 <template>
-  <div class="projects">
-    <h1></h1>
-  </div>
+  <TextSection 
+  title='My Projects'
+  />
+  <MyProjects></MyProjects>
 </template>
 
 <style>

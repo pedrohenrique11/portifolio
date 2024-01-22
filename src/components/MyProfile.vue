@@ -8,7 +8,7 @@
             Pedro Henrique
         </h1>
         <p>
-            Front-End Developer | Vue.js | React.js
+            Front-End Developer
         </p>
     </div>
 </template>
