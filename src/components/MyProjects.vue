@@ -46,6 +46,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    background-color: #2D2E32;
+}
+.project-containe:hover {
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.1);
 }
 h4 {
     font-size: 1.2rem;
@@ -67,9 +74,8 @@ a:hover {
         grid-template-columns: repeat(1, 1fr);
     }
     img {
-        width: 26rem;
+        width: 25rem;
         height: 15.2rem;
-        max-width: 90%;
     }
 }
 </style>

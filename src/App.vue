@@ -49,4 +49,13 @@ import { RouterLink, RouterView } from 'vue-router'
   img {
     width: 35px;
   }
+  a {
+    margin: 0 0.4rem;
+  }
+  @media (max-width: 700px) {
+    nav {
+      display: none;
+    }
+  } 
+
 </style>
