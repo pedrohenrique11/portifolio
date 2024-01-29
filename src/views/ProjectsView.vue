@@ -4,7 +4,7 @@ import MyProjects from '../components/MyProjects.vue'
 </script>
 <template>
   <TextSection 
-  title='My Projects'
+  title='Projects'
   />
   <MyProjects></MyProjects>
 </template>
