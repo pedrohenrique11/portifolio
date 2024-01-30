@@ -3,7 +3,6 @@ import { RouterLink } from 'vue-router';
 import MyProfile from '../components/MyProfile.vue'
 import TheButtons from '../components/TheButtons.vue'
 import TextSection from '../components/TextSection.vue'
-
 </script>
 
 <template>

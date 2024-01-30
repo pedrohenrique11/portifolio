@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import ButtonMenu from '../src/components/ButtonMenu.vue'
 </script>
 
 <template>
@@ -18,8 +19,9 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
       </ul>
   </header>
-
+  <ButtonMenu></ButtonMenu>
   <RouterView />
+  
 </template>
 
 <style scoped>
