@@ -2,9 +2,9 @@
     export default {
         props: {
             link: String,
-            img: String,
             title: String,
-            text: String
+            text: String,
+            img: String
         }
     }
 </script>
@@ -12,7 +12,7 @@
 <template>
     <a :href="link" class="project-link">
         <div class="project-container">
-            <img :src="im" :alt="title" class="project-image">
+            <img :src="img" :alt="title" class="project-image">
             <div class="project-info">
                 <h4>{{ title }}</h4>
                 <p>{{ text }}</p>
@@ -49,7 +49,6 @@
 
 .project-image {
     height: auto;
-    border-bottom: 1px solid #ccc;
 }
 
 .project-info {
