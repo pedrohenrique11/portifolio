@@ -1,10 +1,12 @@
 <script>
-
+    export default {
+        props: ['onclick']
+    }
 </script>
 
 <template>
     <div class="button-container">
-        <button>
+        <button  @click="onClick" >
             <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 -960 960 960" width="38"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </button>
     </div>
@@ -33,6 +35,7 @@
         cursor: pointer;
 
         transition: 0.5s;
+        z-index: 1000;
     }
     button:hover {
         background: rgba(0, 189, 126, 1);

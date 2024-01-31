@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import ButtonMenu from '../src/components/ButtonMenu.vue'
+import MenuMobile from './components/MenuMobile.vue';
 </script>
 
 <template>
@@ -19,7 +19,7 @@ import ButtonMenu from '../src/components/ButtonMenu.vue'
         </li>
       </ul>
   </header>
-  <ButtonMenu></ButtonMenu>
+  <MenuMobile />
   <RouterView />
   
 </template>

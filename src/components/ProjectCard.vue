@@ -40,6 +40,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    z-index: 20;
 }
 
 .project-container:hover {
@@ -52,7 +53,6 @@
 }
 
 .project-info {
-
     padding: 1rem;
 }
 
