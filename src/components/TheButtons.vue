@@ -20,7 +20,9 @@ export default {
         border: none;
         border-radius: 5px;
         font-size: 1rem;
+        font-weight: 600;
         cursor: pointer;
+        color: #000;
     }
     button:hover {
         background-color: rgb(23, 148, 106);
