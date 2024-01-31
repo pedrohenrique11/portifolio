@@ -13,10 +13,10 @@ const toggle = () => {
 
 <template>
     <div ref="menu" id="menu" :class="{'menu': true, 'active': isActive}">
-            <li>
+            <li :onClick="toggle">
                 <RouterLink to="/">Home</RouterLink>
             </li>
-            <li>
+            <li :onClick="toggle">
                 <RouterLink to="/projects">Projects</RouterLink>
             </li>
             <ButtonMenu :onClick="toggle"/>
