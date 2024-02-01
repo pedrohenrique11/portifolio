@@ -12,9 +12,8 @@ export default {
             cards: [
                 {title: "Pomodoros", text: "Productivity app based on the Pomodoro technique for focused work intervals.", link: "https://github.com/pedrohenrique11/Pomodoros", img: Pomodoros},
                 {title: "BMI Calculator", text: "Body Mass Index (BMI) calculator for quick health and fitness assessment.", link: "https://github.com/pedrohenrique11/BMI-Calculator", img: BMI},
-                {title: "Arithmetic calculator", text: "Simple calculator for basic arithmetic operations.", link: "https://github.com/pedrohenrique11/calculadora_aritmetica/tree/main", img: Calculadora},
-                {title: "Guessing game", text: "Fun game to guess a random number within a specified range.", link: "https://github.com/pedrohenrique11/guessing-game", img:"", }
-            ]
+                {title: "Arithmetic calculator", text: "A arithmetic calculator project designed to perform basic mathematical operations.", link: "https://github.com/pedrohenrique11/calculadora_aritmetica/tree/main", img: Calculadora}
+            	]
         }
     }
 }
@@ -27,17 +26,26 @@ export default {
 </template>
 
 <style scoped>
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    }
+.card {
+  flex: 0 1 calc(30% - 20px);
+  margin: 20px;
+}
 
-    @media (max-width: 1100px) {
-        .content {
-            flex-direction: column;
-            align-items: center;
-        }
+@media (max-width: 1100px) {
+    .card {
+      flex-basis: calc(50% - 20px);
     }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+}
 </style>

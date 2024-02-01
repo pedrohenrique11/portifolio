@@ -1,58 +1,62 @@
 <script>
+import TheButtons from './TheButtons.vue';
+
     export default {
-        props: {
-            link: String,
-            title: String,
-            text: String,
-            img: String
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        text: {
+            type: String,
+            required: true
+        },
+        link: {
+            type: String,
+            default: 'Saiba Mais'
         }
-    }
+    },
+    components: { TheButtons }
+}
 </script>
-
 <template>
-    <a :href="link" class="project-link">
-        <div class="project-container">
-            <img :src="img" :alt="title" class="project-image">
-            <div class="project-info">
-                <h4>{{ title }}</h4>
-                <p>{{ text }}</p>
-            </div>
-        </div>
-    </a>
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">{{ title }}</h2>
+        <p class="card-text">{{ text }}</p>
+        <a :href="link">
+            <TheButtons title="View Project" />
+        </a>
+      </div>
+    </div>
 </template>
-
+  
 <style scoped>
-.project-link {
-    max-width: 500px;
+  .card-container {
+    perspective: 1000px;
+  }
+  .card {
     padding: 0;
-    text-decoration: none;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-bottom: 1rem;
-    color: #fff;
-    background-color: #2D2E32;
-    border-radius: 8px;
+    border-radius: 3px;
+    background-color: var(--primary-dark-color);
     overflow: hidden;
-    transition: transform 0.3s ease;
-}
 
-.project-container:hover {
-    color: var(--secondary-color);
-    transform: translateY(-5px);
-}
-
-.project-image {
-    height: 400px;
-    width: 100%;
-    object-fit: cover; 
-}
-
-.project-info {
-    padding: 1rem;
-}
-
+  }
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    margin-bottom: 15px;
+    color: #666;
+  }
+  a {
+    text-align: center;
+  }
 </style>
