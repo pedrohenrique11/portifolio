@@ -26,5 +26,18 @@ export default {
     </div>
 </template>
 
-<style >
+<style scoped>
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    @media (max-width: 1100px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 </style>

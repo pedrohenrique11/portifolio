@@ -23,6 +23,7 @@
 
 <style scoped>
 .project-link {
+    max-width: 500px;
     padding: 0;
     text-decoration: none;
 }
@@ -30,40 +31,28 @@
 .project-container {
     display: flex;
     flex-direction: column;
-
     padding: 0;
     margin-bottom: 1rem;
-
     color: #fff;
     background-color: #2D2E32;
-
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .project-container:hover {
-    color: var(--secondary-color);;
+    color: var(--secondary-color);
     transform: translateY(-5px);
 }
 
 .project-image {
-    height: auto;
+    height: 400px;
+    width: 100%;
+    object-fit: cover; 
 }
 
 .project-info {
     padding: 1rem;
 }
 
-@media (min-width: 768px) {
-    .project-container {
-        flex-direction: row;
-    }
-
-    .project-image {
-        width: auto;
-        max-width: 300px; 
-        height: 200px;
-    }
-}
 </style>
