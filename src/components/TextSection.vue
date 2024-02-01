@@ -29,7 +29,7 @@ div {
   .section-title {
     color: #fff;
     width: 6rem;
-    border-bottom: 1px solid hsla(160, 100%, 37%, 1);
+    border-bottom: 1px solid var(--secondary-color);
     margin-bottom: 1rem;
   }
 </style>

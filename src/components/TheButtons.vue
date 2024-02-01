@@ -15,16 +15,23 @@ export default {
 
 <style scoped>
     button{
-        padding: 0.8rem 2rem;
-        background-color: hsla(160, 100%, 37%, 1);
-        border: none;
-        border-radius: 5px;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
+        padding: 0.6rem 1.8rem;
+        margin: 0.4rem;
+
+        background-color: var(--secondary-color);
         color: #000;
+
+        border: none;
+        border-radius: 3px;
+
+        font-size: 1rem;
+        font-weight: 500;
+
+        transition: .3s;
+        cursor: pointer;
     }
     button:hover {
-        background-color: rgb(23, 148, 106);
+        padding: 0.6rem 2.2rem;
+        background-color: #35a8ce;
     }
 </style>

@@ -40,11 +40,10 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    z-index: 20;
 }
 
 .project-container:hover {
-    color: hsla(160, 100%, 37%, 1);;
+    color: var(--secondary-color);;
     transform: translateY(-5px);
 }
 

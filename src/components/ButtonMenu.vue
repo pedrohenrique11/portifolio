@@ -24,13 +24,13 @@
         align-content: center;
         padding: 0.5rem 0.6rem;
 
-        background: rgba(0, 189, 126, 0.81);
+        background: var(--secondary-color);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(0.9px);
         -webkit-backdrop-filter: blur(0.9px);
 
-        border-radius: 5px;
+        border-radius: 3px;
         border: none;
         cursor: pointer;
 
@@ -38,7 +38,7 @@
         z-index: 1000;
     }
     button:hover {
-        background: rgba(0, 189, 126, 1);
+        background: #0b789c;
     }
 
     @media (min-width: 700px) {

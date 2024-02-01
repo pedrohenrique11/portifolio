@@ -1,4 +1,6 @@
-<script>
+<script setup> 
+import { RouterLink } from 'vue-router';
+import TheButtons from './TheButtons.vue';
 
 </script>
 
@@ -6,13 +8,22 @@
     <div class="content">
         <div class="text">
             <h1>
-                Pedro Henrique
+                know a little more about
+                my work and studies
             </h1>
             <p>
-                Front-End Developer
+                I code beautifully simple things, and i love
+                what i do.
             </p>
+            <div class="buttons">
+                <RouterLink to="/projects">
+                    <TheButtons title="Projects"/>
+                </RouterLink>
+                <RouterLink to="/projects">
+                    <TheButtons title="About me"/>
+                </RouterLink>
+            </div>
         </div>
-        <img src="../components/imgs/Illustration.svg" alt="">
     </div>
     
 </template>
@@ -20,15 +31,20 @@
 <style scoped>
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        text-align: center;
+
+        margin: 5rem auto;
         padding: 2rem 0 0 0;
+
+        max-width: 800px;
     }
-    .text {
-        position: absolute;
+    .buttons {
+        padding: 0;
+        font-display: flex;
     }
     img {
-        margin-left: 50%;
         width: 20rem;
     }
     h1 {
@@ -36,9 +52,20 @@
         line-height: 3rem;
         color: #fff;
     }
-    @media (max-width: 700px) {
+    p {
+        margin: 1rem 0;
+    }
+    @media (max-width: 800px) {
+        .content {
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
         img {
-            width: 14rem;
+            margin-top: 1rem;
+            width: 17rem;
         }
     }
 </style>
