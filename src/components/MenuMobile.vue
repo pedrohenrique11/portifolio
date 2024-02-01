@@ -19,6 +19,9 @@ const toggle = () => {
             <li :onClick="toggle">
                 <RouterLink to="/projects">Projects</RouterLink>
             </li>
+            <li>
+                <RouterLink to="/about">About</RouterLink>
+            </li>
             <ButtonMenu :onClick="toggle"/>
     </div>
     <ButtonMenu :onClick="toggle"/>

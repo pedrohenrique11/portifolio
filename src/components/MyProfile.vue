@@ -1,7 +1,6 @@
 <script setup> 
 import { RouterLink } from 'vue-router';
 import TheButtons from './TheButtons.vue';
-
 </script>
 
 <template>

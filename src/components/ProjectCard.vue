@@ -37,12 +37,16 @@ import TheButtons from './TheButtons.vue';
   }
   .card {
     padding: 0;
+    margin: 0 auto;
     border-radius: 3px;
     background-color: var(--primary-dark-color);
+    border: 1px solid var(--primary-dark-color);
     overflow: hidden;
-
+    	
+    transition: 2s ease;
   }
   .card:hover {
+    border: 1px solid var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .card-content {
