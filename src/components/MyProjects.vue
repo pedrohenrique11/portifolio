@@ -34,7 +34,7 @@ export default {
 
 .card {
   flex: 0 1 calc(30% - 20px);
-  margin: 20px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1100px) {
