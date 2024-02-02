@@ -4,16 +4,18 @@ import TheButtons from './TheButtons.vue';
     export default {
     props: {
         title: {
-            type: String,
-            required: true
+          type: String,
+          required: true
         },
         text: {
-            type: String,
-            required: true
+          type: String,
+          required: true
         },
-        link: {
-            type: String,
-            default: 'Saiba Mais'
+        projectLink: {
+          type: String,
+        },
+        gitLink: {
+          type: String,
         }
     },
     components: { TheButtons }
@@ -24,8 +26,11 @@ import TheButtons from './TheButtons.vue';
       <div class="card-content">
         <h2 class="card-title">{{ title }}</h2>
         <p class="card-text">{{ text }}</p>
-        <a :href="link">
-            <TheButtons title="View Project" />
+        <a :href="projectLink">
+            <TheButtons title="Live demo" class="button"/>
+        </a>
+        <a :href="gitLink">
+            <TheButtons title="Repositorie" class="button secondary-button"/>
         </a>
       </div>
     </div>
@@ -43,7 +48,7 @@ import TheButtons from './TheButtons.vue';
     border: 1px solid var(--primary-dark-color);
     overflow: hidden;
     	
-    transition: 2s ease;
+    transition: 2s;
   }
   .card:hover {
     border: 1px solid var(--secondary-color);
@@ -62,5 +67,11 @@ import TheButtons from './TheButtons.vue';
   }
   a {
     text-align: center;
+  }
+  .secondary-button {
+    margin-left: 1rem;
+    color: #fff;
+    background-color: var(--primary-dark-color);
+    border: 1px solid var(--secondary-color);
   }
 </style>

@@ -16,10 +16,10 @@ import TheButtons from './TheButtons.vue';
             </p>
             <div class="buttons">
                 <RouterLink to="/projects">
-                    <TheButtons title="Projects"/>
+                    <TheButtons title="Projects" :delay="300" class="button"/>
                 </RouterLink>
                 <RouterLink to="/projects">
-                    <TheButtons title="About me"/>
+                    <TheButtons title="About me" :delay="500" class="button"></TheButtons>
                 </RouterLink>
             </div>
         </div>
@@ -42,6 +42,10 @@ import TheButtons from './TheButtons.vue';
     .buttons {
         padding: 0;
         font-display: flex;
+    }
+    .button {
+        transition: .5s ease;
+        margin: 1rem 0.4rem;
     }
     img {
         width: 20rem;

@@ -9,7 +9,7 @@
         mounted() {
             setTimeout (() => {
                 this.loaded = true
-            }, 200) 
+            }, 300) 
         }
     }
 </script>
