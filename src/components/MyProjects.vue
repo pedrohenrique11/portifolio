@@ -36,7 +36,7 @@ export default {
         :projectLink="value.projectLink"
         class="card" 
         :class="{'slide-up':loaded}"
-        :style="{'transition-delay': `${index * 0.11}s`}"/>
+        :style="{'transition-delay': `${index * 0.1}s`}"/>
     </div>
 </template>
 
