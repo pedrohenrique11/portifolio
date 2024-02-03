@@ -26,10 +26,10 @@ import TheButtons from './TheButtons.vue';
       <div class="card-content">
         <h2 class="card-title">{{ title }}</h2>
         <p class="card-text">{{ text }}</p>
-        <a :href="projectLink">
+        <a :href="projectLink" target="_blank">
             <TheButtons title="Live demo" class="button"/>
         </a>
-        <a :href="gitLink">
+        <a :href="gitLink" target="_blank">
             <TheButtons title="Repositorie" class="button secondary-button"/>
         </a>
       </div>

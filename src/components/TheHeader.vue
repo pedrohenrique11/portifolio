@@ -12,10 +12,10 @@
         </nav>
         <ul>
           <li>
-            <a href="https://github.com/pedrohenrique11"><img src="../components/icons/icons8-github.svg" alt=""></a>
+            <a href="https://github.com/pedrohenrique11" target="_blank"><img src="../components/icons/icons8-github.svg" alt=""></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/pedro-henrique-79483b19a/"><img src="../components/icons/icons8-linkedin.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-79483b19a/" target="_blank"><img src="../components/icons/icons8-linkedin.svg" alt=""></a>
           </li>
         </ul>
   </header>
