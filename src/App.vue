@@ -11,11 +11,16 @@ import TheHeader from './components/TheHeader.vue';
   <div class="content">
     <RouterView />
   </div>
-  
+  <footer>
+    <p>© 2005-2021 Pedro Henrique</p>
+  </footer>
 </template>
 
 <style scoped>
   .content {
     margin-top: 2rem;
+  }
+  p {
+    text-align: center;
   }
 </style>

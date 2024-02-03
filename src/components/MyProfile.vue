@@ -35,7 +35,7 @@ import TheButtons from './TheButtons.vue';
         align-items: center;
         text-align: left;
 
-        margin: 10rem auto;
+        margin: 15rem auto;
 
     }
     .buttons {
