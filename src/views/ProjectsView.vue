@@ -1,20 +1,18 @@
 <script setup>
-import TextSection from '../components/TextSection.vue'
 import MyProjects from '../components/MyProjects.vue'
 </script>
 <template>
-  <TextSection 
-  title='Projects'
-  />
-  <MyProjects></MyProjects>
+  <div class="content">
+    <h1>Projects</h1>
+    <MyProjects></MyProjects>
+  </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+<style scoped>
+  h1 {
+    font-size: 1.6rem;
+    margin: 5rem 0;
+    border-bottom: 1px solid var(--secondary-color);
   }
-}
+
 </style>

@@ -69,7 +69,7 @@ import TheButtons from './TheButtons.vue';
     text-align: center;
   }
   .secondary-button {
-    margin-left: 1rem;
+    margin-left: .4rem;
     color: #fff;
     background-color: var(--primary-dark-color);
     border: 1px solid var(--secondary-color);

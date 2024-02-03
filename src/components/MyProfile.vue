@@ -4,10 +4,10 @@ import TheButtons from './TheButtons.vue';
 </script>
 
 <template>
-    <div class="content">
+    <div class="profile-content">
         <div class="text">
             <h1>
-                know a little more about
+                know a little more about<br/>
                 my work and studies
             </h1>
             <p>
@@ -23,21 +23,20 @@ import TheButtons from './TheButtons.vue';
                 </RouterLink>
             </div>
         </div>
+        <img src="./imgs/Fogueira.gif" alt="">
     </div>
     
 </template>
 
 <style scoped>
-    .content {
+    .profile-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
+        text-align: left;
 
-        margin: 5rem auto;
-        padding: 2rem 0 0 0;
+        margin: 10rem auto;
 
-        max-width: 800px;
     }
     .buttons {
         padding: 0;
@@ -45,10 +44,11 @@ import TheButtons from './TheButtons.vue';
     }
     .button {
         transition: .5s ease;
-        margin: 1rem 0.4rem;
+        margin: 1rem 0.4rem 1rem 0rem;
     }
     img {
-        width: 20rem;
+        margin-right: 2rem;
+        width: 22rem;
     }
     h1 {
         font-size: 3rem;
@@ -59,16 +59,18 @@ import TheButtons from './TheButtons.vue';
         margin: 1rem 0;
     }
     @media (max-width: 800px) {
-        .content {
+        .profile-content {
+            text-align: center;
             flex-direction: column;
+            margin: 4rem auto;
         }
         h1 {
             font-size: 2rem;
             line-height: 2.4rem;
         }
         img {
-            margin-top: 1rem;
-            width: 17rem;
+            margin: 1rem auto;
+            width: 15rem;
         }
     }
 </style>
