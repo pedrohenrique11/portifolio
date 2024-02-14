@@ -1,6 +1,7 @@
 <script setup>
-import ProjectCard from '@/components/ProjectCard.vue';
 import HomeSection from '../components/HomeSection.vue'
+import ContactSection from '@/components/ContactSection.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import ProfileCard from '../components/ProfileCard.vue'
 import TheButtons from '@/components/TheButtons.vue';
 import { RouterLink } from 'vue-router';
@@ -16,14 +17,16 @@ const cards = [
 <template>
   <main>
     <HomeSection />
-    <div class="profile-content">
+    <div class="profile-content section">
       <ProfileCard class="profile"/>
-      <RouterLink to="/about">
-        <TheButtons class="button" title="About-me"/>
-      </RouterLink>
+      <div class="button">
+        <RouterLink to="/about">
+          <TheButtons title="About-me"/>
+        </RouterLink>
+      </div>
     </div>
-    <h2>Some projects...</h2>
-    <div class="projects-content">
+    <h2>Some Projects...</h2>
+    <div class="projects-content section">
         <ProjectCard v-for="(value, index) in cards" 
         :key="index" 
         :title="value.title" 
@@ -32,24 +35,35 @@ const cards = [
         :projectLink="value.projectLink"
         class="projects-card" />
     </div>
+    <div class="button">
       <RouterLink to="/projects">
-        <TheButtons class="button p" title="Projects"/>
+        <TheButtons title="More Projects"/>
       </RouterLink>
+    </div>
+
+      <div class="contact-content section">
+        <ContactSection/>
+      </div>
   </main>
 </template>
 
 <style scoped>
-
 .profile {
   margin-bottom: 1rem;
 }
 .button {
-  margin-bottom: 12rem;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 15rem;
 }
 
 h2 {
   margin-top: 2rem;
+  padding-bottom: 0.4rem;
   text-align: center;
+
+  border-bottom: 1px solid var(--secondary-color);
 }
 .projects-content {
   display: flex;
@@ -67,11 +81,6 @@ h2 {
 @media (max-width: 800px) {
   .projects-card {
     flex-basis: calc(100%);
-  }
-}
-@media (min-width: 800px) {
-  .p {
-    margin-left: 10px;
   }
 }
 </style>

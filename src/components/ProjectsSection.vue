@@ -30,7 +30,7 @@ onMounted(() => {
         :projectLink="value.projectLink"
         class="projects-card" 
         :class="{'slide-up':loaded}"
-        :style="{'transition-delay': `${index * 0.1}s`}"/>
+        />
     </div>
 </template>
 

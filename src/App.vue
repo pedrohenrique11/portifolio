@@ -9,7 +9,12 @@ import TheHeader from './components/TheHeader.vue';
   <TheHeader />
   <MenuMobile />
   <div class="content">
-    <RouterView />
+    <Transition
+     enter-active-class="animate__animated animate__fadeInLeft" 
+     leave-active-class="animate__animated animate__fadeOutLeft"
+     mode="out-in">
+      <RouterView />
+    </Transition>
   </div>
   <footer>
   </footer>

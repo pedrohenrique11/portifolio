@@ -7,7 +7,11 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: {
+        enterClass: "animate__animated animate__fadeInLeft",
+        leaveClass: "animate__animated animate__fadeInRight",
+      }
     },
     {
       path: '/projects',
