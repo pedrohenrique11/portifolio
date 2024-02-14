@@ -61,7 +61,7 @@ import TheButtons from './TheButtons.vue';
     @media (max-width: 800px) {
         .profile-content {
             text-align: center;
-            flex-direction: column;
+            flex-direction: column-reverse;
             margin: 4rem auto;
         }
         h1 {
@@ -69,7 +69,7 @@ import TheButtons from './TheButtons.vue';
             line-height: 2.4rem;
         }
         img {
-            margin: 1rem auto;
+            margin: 5rem auto;
             width: 15rem;
         }
     }

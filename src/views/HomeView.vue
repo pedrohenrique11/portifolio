@@ -17,7 +17,8 @@ const cards = [
 <template>
   <main>
     <HomeSection />
-    <div class="profile-content section">
+    <div data-aos="fade-up" 
+    class="profile-content section">
       <ProfileCard class="profile"/>
       <div class="button">
         <RouterLink to="/about">
@@ -26,7 +27,8 @@ const cards = [
       </div>
     </div>
     <h2>Some Projects...</h2>
-    <div class="projects-content section">
+    <div data-aos="fade-up" 
+    class="projects-content section">
         <ProjectCard v-for="(value, index) in cards" 
         :key="index" 
         :title="value.title" 
@@ -35,13 +37,14 @@ const cards = [
         :projectLink="value.projectLink"
         class="projects-card" />
     </div>
-    <div class="button">
+    <div data-aos="fade-up"  class="button">
       <RouterLink to="/projects">
-        <TheButtons title="More Projects"/>
+        <TheButtons  title="More Projects"/>
       </RouterLink>
     </div>
 
-      <div class="contact-content section">
+      <div data-aos="fade-up" 
+      class="contact-content section">
         <ContactSection/>
       </div>
   </main>
