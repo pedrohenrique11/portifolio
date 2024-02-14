@@ -6,9 +6,9 @@
     <header>
       <h3>Pedro Henrique</h3>
         <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/projects">Projects</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink class="link" to="/">Home</RouterLink>
+          <RouterLink class="link" to="/projects">Projects</RouterLink>
+          <RouterLink class="link" to="/about">About</RouterLink>
         </nav>
         <ul>
           <li>
@@ -29,9 +29,12 @@
         
         border-bottom: 1px solid var(--secondary-color);
     }
-
-
-  
+    .link {
+      color: #fff;
+    }
+    .link:hover {
+      color: var(--secondary-color);
+    }
   nav {
     padding: 1rem 2rem;
   }
