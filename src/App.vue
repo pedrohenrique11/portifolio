@@ -12,7 +12,6 @@ import TheHeader from './components/TheHeader.vue';
     <RouterView />
   </div>
   <footer>
-    <p>© 2005-2021 Pedro Henrique</p>
   </footer>
 </template>
 
@@ -20,7 +19,7 @@ import TheHeader from './components/TheHeader.vue';
   .content {
     margin-top: 2rem;
   }
-  p {
+  footer p {
     text-align: center;
   }
 </style>

@@ -1,10 +1,10 @@
 <script setup>
-import MyProjects from '../components/MyProjects.vue'
+import ProjectsSection from '../components/ProjectsSection.vue'
 </script>
 <template>
   <div class="content">
     <h1>Projects</h1>
-    <MyProjects></MyProjects>
+    <ProjectsSection />
   </div>
 </template>
 
