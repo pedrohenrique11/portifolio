@@ -7,8 +7,8 @@ import TheButtons from '@/components/TheButtons.vue';
 import { RouterLink } from 'vue-router';
 
 const cards = [
+    {title: "Movie List", text: "A website to check movie information and create a list of movies to watch later.", projectLink:"https://movie-list-snowy.vercel.app/", gitLink: "https://github.com/pedrohenrique11/movie-list"},
     {title: "Pomodoros", text: "Productivity app based on the Pomodoro technique for focused work intervals.", projectLink:"https://pedrohenrique11.github.io/Pomodoros/", gitLink: "https://github.com/pedrohenrique11/Pomodoros"},
-    {title: "BMI Calculator", text: "A Body Mass Index (BMI) calculator for quick health and fitness assessment.", projectLink:"https://pedrohenrique11.github.io/BMI-Calculator/", gitLink: "https://github.com/pedrohenrique11/BMI-Calculator"},
    
 ];
 
